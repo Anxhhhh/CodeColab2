@@ -31,8 +31,9 @@ const App = () => {
 
   useEffect(() => {
     if (username && editorMounted && editorRef.current) {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
       const provider = new SocketIOProvider(
-        'http://localhost:3000',
+        backendUrl,
         'monaco',
         ydoc,
         {
