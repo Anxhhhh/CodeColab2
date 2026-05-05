@@ -93,7 +93,7 @@ const App = () => {
           <input type="text"
             name="username"
             placeholder='Enter your username'
-            className='p-2 border border-gray-300 rounded' />
+            className='p-2 border border-[#3e3e42] bg-[#2d2d2d] text-white rounded focus:outline-none focus:border-blue-500' />
           <button className="p-2 bg-blue-500 text-white rounded" >Join</button>
 
         </form>
